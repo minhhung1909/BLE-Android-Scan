@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp">
+
+    <ImageView
+        android:id="@+id/deviceIcon"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:src="@drawable/bleic"
+        android:layout_centerVertical="true"
+        android:layout_alignParentStart="true"/>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_toEndOf="@id/deviceIcon"
+        android:layout_toStartOf="@id/statusConnect"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="16dp">
+
+        <TextView
+            android:id="@+id/nameBLE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="ECO Device"
+            android:textSize="18sp"
+            android:textColor="#333333"
+            android:textStyle="bold"
+            android:ellipsize="end"
+            android:maxLines="1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tap to connect"
+            android:textSize="14sp"
+            android:textColor="#757575"/>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/statusConnect"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not Connected"
+        android:textSize="14sp"
+        android:textColor="#FF5722"
+        android:padding="6dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"/>
+</RelativeLayout>
